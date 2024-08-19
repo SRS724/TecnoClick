@@ -1,0 +1,104 @@
+/*Reseteo de margenes y padding */
+*{
+    margin: 0; /*Elimina margenes y rellenos predeterminados */
+    padding: 0; /*Elimina margenes y rellenos predeterminados */
+    box-sizing: border-box; /*Incluye el padding y el borde en el cálculo del ancho y alto del elemento, facilitando el control del tamaño de los elementos */
+}
+
+
+/* Estilo del body */
+body {
+    font-family:'Times New Roman', Times, serif; /*Define la fuente del texto */
+    line-height: 1.5; /*Establece la latura de linea para un espaciado adecuado entre lineas de texto */
+    background-color: #dfdfdf !important; /* Define el color del fondo del documento*/
+}
+
+
+
+/* Estilo del main */
+main {
+    position: fixed; /*Fija el main en una posicion especifica*/
+    top: 0px; /* Lo posiciona en la parte superior de la pagina*/
+    left: 0;  /*Hace que ocupe todo el ancho y alto disponible*/
+    right: 0; /*Hace que ocupe todo el ancho y alto disponible*/
+    bottom: 0; /*Hace que ocupe todo el ancho y alto disponible*/
+    padding: 10px; /*Agrega relleno*/
+    margin: 0; /* limina margenes de externos*/
+    overflow-y: auto; /* Para permitir el desplazamiento dentro del main si su contenido es largo */
+}
+
+
+
+/*Estilo de la clase productos*/
+.productos {
+    display: flex; /*Se utiliza para el diseño*/
+    flex-wrap: wrap; /*Permite que los elementos se envuelvan en lineas*/
+    justify-content: center; /* Asegura que los productos estén centrados horizontalmente */
+    text-align: center; /*Centra el texto*/
+    padding: 15px; /*Agrega un relleno*/
+}
+
+
+
+/*Estilo para el titulo de los productos (Cámaras, Celulares etc)*/
+.productos h2 {
+    width: 100%; /* Asegura que el título ocupe el ancho completo */
+    font-size: 57px; /*Difine el tamanaño de la fuente del titulo*/
+    margin-bottom: 25px;  /*Agrega una margen inferior*/
+}
+
+
+
+/*Estilo para el cajon de producto*/
+.producto {
+    display:flexbox; /*Se utiliza para el diseño*/
+    flex-direction: column; /*Organiza los elementos en una columna*/
+    align-items: center; /*Centro los elementos de manera horizontal*/
+    justify-content: space-between; /* Asegura que los elementos internos estén distribuidos uniformemente */
+    width: 300px; /*Se establece un ancho fijo*/
+    height: 465px; /* Altura fija para los productos */
+    margin: 10px; /*Agrega una margen */
+    padding: 20px; /*Agrega un relleno*/
+    background-color: #ffffff; /*Establece un color para el fondo*/
+    border-radius: 8px; /*Se utiliza para redondear los bordes*/
+    box-shadow: 0 0 10px #23bb83; /*Añade una sombre al elemento para darle un efecto de profundidad*/
+    text-align: center;
+}
+
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    margin: 10px 0;
+    font-size: 1.50em;
+}
+
+.producto p {
+    margin: 10px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    color: #000000;
+}
+
+.producto button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #2e2e2e; /* Color del botón */
+    color: white; /*Color de la letra */ 
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:small;
+}
+.producto button:hover {
+    background-color: #1fa574;
+}
+

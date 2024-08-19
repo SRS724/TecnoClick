@@ -1,0 +1,101 @@
+/* Reseteo de márgenes y padding */
+* {
+    margin: 0; /*Elimina margenes y rellenos predeterminados de los elementos para evitar inconsistencias en el diseño*/
+    padding: 0; /*Elimina margenes y rellenos predeterminados de los elementos para evitar inconsistencias en el diseño*/
+    box-sizing: border-box; /*Incluye el padding y el borde en el calculo del ancho de los elementos, facilita la gestion del tamaño*/
+}
+
+
+/* Estilo del body */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*Define la fuente del texto */
+    background-color: #dfdfdf; /* Define el color del fondo del documento*/
+}
+
+
+/* Estilo del main */
+main {
+    position: fixed; /*Fija el main en la ventana del navegador*/
+    top: 0px; /*Hace que el main ocupe todo el espacio disponible en la ventana del navegador, comenzando desde el borde superior del viewport hasta el borde inferior */
+    left: 0px; /*Hace que el main ocupe todo el espacio disponible en la ventana del navegador, comenzando desde el borde superior del viewport hasta el borde inferior */
+    right: 0px; /*Hace que el main ocupe todo el espacio disponible en la ventana del navegador, comenzando desde el borde superior del viewport hasta el borde inferior */
+    bottom: 0px; /* Si quieres que el main ocupe el espacio restante de la página */
+    padding: 10px; /*Añade un relleno interno de pixeles*/
+    margin: 0; /*Elimina el margen exterior*/
+    overflow-y: auto; /* Para permitir el desplazamiento dentro del main si su contenido es largo */
+}
+
+
+/*Estilo de la sección del inicio*/
+.inicio {
+    text-align: center; /*Centra el texto dentro del elemento del inicio*/
+    padding: 10px; /*Añade un relleno de pixeles dentro del elemento inicio*/
+    background-color: #ffffff; /* Añade el color del fondo*/
+    color: #2b2b2b; /*Añade el color de la letra*/
+    margin: 10px auto; /*Redondea las esquinas de los elementos*/
+    border-radius: 8px;
+    box-shadow: 0 0 10px #23bb83; /*Añade una sombre al elemento para darle un efecto de profundidad*/
+}
+
+ 
+/*Estilo del titulo (Bienvenidos...) */
+.inicio h2 {
+    font-size: 40px; /*Establece el tamaño de la fuente*/
+    margin-bottom: 40px; /*Separa el (Bienvenidos...) del contenido siguiente*/
+}
+
+
+/*Estilo del subtitulo (Los mejores...) */
+.inicio p {
+    font-size: 25px; /*Establece el tamaño de la fuente*/
+    margin-bottom: 25px; /* Añade un margen en pixeles ára separ lo siguiente*/
+}
+
+
+
+/*Estilo del botón de Registrarse*/
+.btn {
+    display: inline-block; /*Hace que el botón se comporte como un bloque en línea, permitiendo ajustar su tamaño y añadir márgenes*/
+    background-color: #2e2e2e; /*Establece el color de fondo del botón*/
+    color: #fff; /*Establece el color de la letra*/
+    padding: 10px 20px; /*Agrega un relleno de pixeles en la parte superior e inferior */
+    text-decoration: none; /*Elimina el subrayado del texto del enlace*/
+    border-radius: 5px; /*Redondeda las esquinas del botón*/
+    font-size: 20px; /*Define el tamaño de la fuente*/
+    transition: background-color 0.3s; /*Añade una transición suave al color del fondo del botón*/
+}
+
+.btn-container {
+    margin-top: 40px; /* Espacio superior para separar del contenido anterior */
+    margin-bottom: 25px; /* Añade un margen en pixeles ára separ lo siguiente*/
+    text-align: center; /* Centra el botón dentro del contenedor si es necesario */
+}   
+
+
+/*Estilo tansición del boton de Resgistrarse*/
+.btn:hover {
+    background-color: #1fa574; /*Cambia el color de fondo del botón a un verde más claro cuando el cursor pasa sobre él*/
+}
+
+
+
+/* Estilo de la sección de productos */
+.productos {
+    display: flex; /*Organiza el modelo de la caja para organizar los elementos dentro*/
+    justify-content: center; /*Centro los elementos */
+    gap: 15px; /*Añade un espacio entro los elementos */
+    flex-wrap: wrap; /*Permite que los elementos se envuelvan en lineas si es necesario*/
+    margin-top: 20px; /*Agrega una margen superior de pixeles para separar*/
+}
+
+
+
+/*Estilo para las imagenes*/
+.productos img {
+    width: 205px; /*Establece un ancho fijo para las imagenes*/
+    height: auto; /*Ajusta la altura automaticamente para mantener una proporcion*/
+    border-radius: 8px; /*Redondea las esquinas*/
+    box-shadow: 0 0 10px #000; /*/*Añade una sombre al elemento para darle un efecto de profundidad*/
+}
+
+

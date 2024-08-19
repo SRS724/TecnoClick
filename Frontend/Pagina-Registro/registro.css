@@ -1,0 +1,104 @@
+/* Reseteo de márgenes y padding */
+* {
+    margin: 0; /*Elimina las margenes predeterminadas de los elementos*/
+    padding: 0; /*Elimina el padding predeterminado de los elementos*/
+    box-sizing: border-box; /*Cambia el modelo de la caja para incluir elementos total del padding y el ancho*/
+}
+
+
+
+/* Estilo del main y la sección de registro */
+main {
+    display: flex;
+    position: fixed; /*Fija el main en la ventana del navegador*/
+    top: -62px; /*Desplaza el main hacia arriba segun los pixeles que se configuren*/
+    left: 0px; /*Hace que el main ocupe todo el espacio disponible en la ventana del navegador, comenzando desde el borde superior del viewport hasta el borde inferior */
+    right: 0px; /*Hace que el main ocupe todo el espacio disponible en la ventana del navegador, comenzando desde el borde superior del viewport hasta el borde inferior */
+    bottom: 0px; /* Si quieres que el main ocupe el espacio restante de la página */
+    justify-content: center; /*Centra el contenido del main de forma horizontal*/
+    align-items:baseline; /*Alinea el conteniso verticalmente en la linea de base del contenido*/
+    height: 600px; /* Ocupa toda la altura de la ventana */
+    padding: 50px; /*Añade un relleno interno*/
+    margin: 0; /*Elimina culaquier margen*/
+    overflow-y: auto; /*Permite el desplazamiento vertical dentro del main si el contenido es grande*/    
+}
+
+
+
+/*Estilo de la clase registro*/
+.registro {
+    width: 100%;
+    max-width: 700px; /* Reduce el ancho máximo del contenedor */
+    padding: 15px;
+    background-color: #ffffff;
+    color: #2b2b2b;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #1fa574;
+}
+
+
+
+
+/*Estilo del encabezado dentro del formulario*/
+.registro h2 {
+    margin-bottom: 20px; /* Reduce el margen inferior */
+    font-size: 35px; /* Reduce el tamaño de la fuente */
+    text-align: center;
+    font-weight: normal; /* Grosor de la letra*/
+}
+
+
+
+
+/*Estilo de los grupos del formulario*/
+.registro .form-group {
+    margin-bottom: 10px; /*Añade una margen inferior*/
+}
+
+
+
+/*Estilo de las etiquetas dentro del registro*/
+.registro label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 15px; /* Reduce el tamaño de la fuente */
+}
+
+
+
+/*Estilo de los campos de entrada dentro del registro*/
+.registro input {
+    width: 100%; /*Los campos ocupen el ancho disponible*/
+    padding: 7px; /*Añade un relleno interno*/
+    border: 1px solid #608879; /*Establece un borde para las lineas */
+    border-radius: 5px; /*Redondea las esquinas*/
+    font-size: 0.9em; /* Reduce el tamaño de la fuente */
+}
+
+
+
+/*Estilo del boton*/
+.registro button {
+    background-color: #2e2e2e; /*Establece el color del boton*/
+    color: #fff; /*Establece el color de la letra dentro del boton*/
+    border: none; /*Eliminar cualquier borde del boton*/
+    padding: 8px 16px; /*Añade relleno interno*/
+    font-size:20px; /* Reduce ligeramente el tamaño de la fuente */
+    border-radius: 5px; /*Redondea las esquinas del boton*/
+    cursor: pointer; /*Cambia el cursor al pasar sobre el boton*/
+    transition: background-color 0.3s; /*Transicion suave*/
+    
+}
+
+.registro button:hover {
+    background-color: #1fa574; /*Cambia el color del boton cuando se pasa el cursor sobre el boton*/
+}
+
+
+/*Estilo del contenedor del boton*/
+.registro .button-container {
+    display: flex; 
+    justify-content: center; /*Centra el boton de manera horizontal*/
+    margin-top: 20px; /*Espacio superior*/
+}

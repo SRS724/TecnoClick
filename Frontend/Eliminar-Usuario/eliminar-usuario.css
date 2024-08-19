@@ -1,0 +1,112 @@
+/* Reseteo de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del main*/
+main {
+    position: fixed; /*Se utiliza para que el main quede fijo en la ventana del navegador*/
+    top: -0px; /* Ajusta esta medida para que esté debajo de la barra de navegación */
+    left: 0;  /* Se añade para que ocupe todo el ancho de la ventanda*/
+    right: 0; /* Se añade para que ocupe todo el ancho de la ventanda*/
+    bottom: 0; /* Hace que el contenedor ocupe todo el alto de la ventana*/
+    padding: 10px; /*Añade espacio interno*/
+    margin: 0; /* Ajusta el margen según sea necesario */
+    overflow-y: auto; /* Para permitir el desplazamiento dentro del main si su contenido es largo */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/*Estilo del contenedor de cambiar contraseña*/
+.login {
+    width: 700px;  /*Define el tamaño del contenedor*/
+    height: 420px; /*Ajusta la altura del contenedor*/
+    margin: 0 auto; /*Centra el contenido de forma horizontal*/
+    padding: 20px;  /*Añade eapacio interno alrededor del contenido*/
+    background-color: #ffffff; /*Define el color del contenedor*/
+    color: #2b2b2b; /*Define el color de la letra dentro del contenedor*/
+    border-radius: 8px; /*añade bordes redondeados al contenedor*/
+    box-shadow: 0 0 10px #1fa574; /*Añade una sombra alrededor del contenedor*/
+}
+
+/*Mensaje del login*/
+#login-mensaje {
+    font-size: 15px;
+    margin-top: -10px; /* Reduce el espacio superior */
+    margin-bottom: 30px; /*Añade espacio inferior*/
+    color: rgb(247, 8, 8);
+    height:5px;
+    }
+
+
+/*Estilo del encabezado*/
+.login h2 {
+    font-size: 35px; /*Define el tamaño de la fuente*/
+    margin-bottom: 40px; /*Añade un espacio debajo del encabezado*/
+    margin-top: -5px; /* Reduce el espacio superior */
+    font-weight: normal; /*Define el espesor de la fuente*/
+    text-align: center; /*Centra el texto dentro del encabezado*/
+}
+
+
+
+/*Estilo dentro del formulario*/
+.login form {
+    display: flex; 
+    flex-direction:column; /*Organiza los elementos hijos en una columna vertical*/
+    gap: 10px; /*Añade un espacio entre los elementos*/
+}
+
+/* Estilo del párrafo de aviso */
+.aviso {
+    font-size: 14px; /* Define el tamaño de la fuente */
+    color: #000000; /* Define el color del texto (rojo en este caso) */
+    margin-bottom: 25px; /* Añade espacio inferior */
+    margin-top: -22px; /* Reduce el espacio superior */
+    line-height: 1.5; /* Aumenta el espaciado entre líneas para mejorar la legibilidad */
+    text-align:justify; /* Centra el texto dentro del contenedor */
+    background-color: #fff; /* Color de fondo suave para resaltar el párrafo */
+    font-weight:bold;  /*Define espesor de la fuente*/
+}
+
+
+/*Estilo de las etiquetas*/
+.login label {
+    font-size: 18px; /*Define el tamaño de la fuente*/
+    font-weight:bold;  /*Define espesor de la fuente*/
+    margin-bottom: 8px; /*Define un espacio debajo de las etiquetas*/
+}
+
+
+
+/*Estilo de las entradas*/
+.login input {
+    padding: 8px; /*Añade espacio interno dentro de los campos de entrada*/
+    font-size: 1em; /*Define el tamaño de la fuente*/
+    border: 1px solid #608879; /*Establece un borde para las lineas */
+    border-radius: 5px; /*Redondea las esquinas*/
+}
+
+
+
+
+.login button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #2e2e2e; /*Define el fonde del boton*/
+    color: #fff; /*Ddefine el color de la fuente dentro del boton*/
+    border: none;  /*Elimina el borde predeterminado del boton*/
+    padding: 10px 20px; /*Añade espacios internos*/
+    font-size: 1em; /*Define el tamaño de la fuente*/
+    border-radius: 5px; /*Redondea las esquinas*/
+    cursor: pointer; /*Cambia el curson cuando se pasa sobre el boton*/
+    transition: background-color 0.3s; /*Añade un efecto de transición suave*/
+    align-self: center; /*Centra el boton*/
+    margin-top: 15px; /* Reduce el espacio superior */
+}
+
+
+.login button:hover {
+    background-color:#1fa574;
+}

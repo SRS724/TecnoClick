@@ -1,0 +1,148 @@
+/* Reseteo de márgenes y padding */
+* {
+    margin: 0; /*Elimina margenes predeterminadas*/
+    padding: 0; /*Elimina wl relleno predeterminado*/
+    box-sizing: border-box; /*Incluye el padding y el borde en el tamaño total de los elementos*/
+}
+
+
+
+
+/* Estilo del main y la sección de inicio de sesión */
+main {
+    position: fixed; /*Fija la posicion del contenedor a la ventana*/
+    top: -13px; /* Ajusta esta medida para que esté debajo de la barra de navegación */
+    left: 0;  /* Se añade para que ocupe todo el ancho de la ventanda*/
+    right: 0; /* Se añade para que ocupe todo el ancho de la ventanda*/
+    bottom: 0; /* Hace que el contenedor ocupe todo el alto de la ventana*/
+    padding: 10px; /*Añade espacio interno*/
+    margin: 0; /* Se asegura que no tenga espacio externo al rededor del contenedor*/
+    overflow-y: auto; /* Para permitir el desplazamiento dentro del main si su contenido es largo */
+}
+
+
+
+/*estilo del formulario*/
+.login {
+    max-width: 700px; /*Define el ancho del contenedor*/
+    height: 450px;    /*Define el alto del contenedor*/
+    margin: 0 auto;  /*Centra el contenedor de forma horizontal*/
+    padding: 50px;  /*Añade un espacio interno*/
+    background-color: #ffffff; /*Define el color del contenedor*/
+    color: #2b2b2b; /*Define el color de la letra dentro del contenedor*/
+    border-radius: 8px;  /*Redondea los esquinas del contenedor*/
+    box-shadow: 0 0 10px #1fa574; /*Añade una sombra alrededor del contenedor*/
+}
+
+
+/*Mensaje del login*/
+#login-mensaje {
+font-size: 15px;
+margin-top: -30px; /* Reduce el espacio superior */
+margin-bottom: 20px; /*Añade espacio inferior*/
+color: rgb(247, 8, 8);
+height:5px;
+}
+
+
+/*Estilo del titulo del contenedor*/
+.login h2 {
+    font-size: 40px; /*Define el tamaño de la fuente*/
+    font-weight: normal; /*Define espesor de la fuente*/
+    margin-bottom: 20px; /*Añade espacio inferior*/
+    margin-top: -30px; /* Reduce el espacio superior */
+    text-align: center;  /*Centra el texto de forma horizontal*/
+}
+
+
+
+/*Estilo del formulario*/
+.login form {
+    display: flex; /*Se utiliza este modelo para el diseño de la caja*/
+    flex-direction: column; /*Organiza los elemento del formularios en la columna*/
+    gap: 10px; /*Añade espacio entre los elementos del formulario*/
+    margin-top: 35px; /* Reduce el espacio superior */
+}
+
+
+
+/*Estilo de las etiquetas del formulario*/
+.login label {
+    font-size: 16px; /*Define el tamaño de la fuente*/
+    font-weight:bold;  /*Define espesor de la fuente*/
+    margin-bottom: 4px; /*Añade un espacio inferior*/
+}
+
+
+
+/*Estilo de los campos de entrada*/
+.login input {
+    width: 100%; /*Los campos ocupen el ancho disponible*/
+    padding: 8px; /*Añade un relleno interno*/
+    border: 1px solid #608879; /*Establece un borde para las lineas */
+    border-radius: 5px; /*Redondea las esquinas*/
+    font-size: 0.9em; /* Reduce el tamaño de la fuente */
+}
+
+
+
+
+/*Estilo boton de (Inicio de Sesión)*/
+.button-container {
+    text-align: center; /* Centra el botón horizontalmente */
+    margin-top: 25px;   /* Ajusta el espacio superior según sea necesario */
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #2e2e2e; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #1fa574; /* Color de fondo del botón al pasar el cursor */
+}
+
+
+
+/*Estilo del contenedor (Cambiar Contraseña)*/
+.btn-container {
+    text-align: center; /* Centra el enlace horizontalmente */
+    margin-top: 15px;   /* Ajusta el espacio superior según sea necesario */
+}
+
+
+.btn-container a {
+    font-size: 18px; /*Define el tamaño de la fuente*/
+    color: #2e2e2e; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.btn-container a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor sobre el enlace */
+}
+
+
+
+
+/*Estilo del contenedor (CEliminar Usuario)*/
+.btn-container {
+    text-align: center; /* Centra el enlace horizontalmente */
+    margin-top: 15px;   /* Ajusta el espacio superior según sea necesario */
+}
+
+
+.btn-container a {
+    font-size: 18px; /*Define el tamaño de la fuente*/
+    color: #2e2e2e; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.btn-container a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor sobre el enlace */
+}
